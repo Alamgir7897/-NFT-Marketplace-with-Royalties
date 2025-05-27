@@ -35,7 +35,6 @@ contract Project is ERC721, ERC721URIStorage, Ownable, ReentrancyGuard, IERC721R
     
     // Mappings
     mapping(uint256 => RoyaltyInfo) private _royalties;
-    mapping(uint256 => Listing) private _listings;
     mapping(address => uint256) private _earnings;
     
     // Events  
