@@ -7,7 +7,6 @@ import "@openzeppelin/contracts/access/Ownable.sol";
 import "@openzeppelin/contracts/utils/ReentrancyGuard.sol";
 import "@openzeppelin/contracts/token/ERC721/IERC721Receiver.sol";
 
-/**
  * @title NFT Marketplace with Royalties
  * @dev A decentralized marketplace for NFTs with automatic royalty distribution
  */
