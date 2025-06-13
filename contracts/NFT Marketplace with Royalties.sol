@@ -9,8 +9,7 @@ import "@openzeppelin/contracts/token/ERC721/IERC721Receiver.sol";
 
  * @title NFT Marketplace with Royalties
  * @dev A decentralized marketplace for NFTs with automatic royalty distributio
-contract Project is ERC721, ERC721URIStorage, Ownable, ReentrancyGuard, IERC721Receiver {
-    
+contract Project is ERC721, ERC721URIStorage, Ownable, ReentrancyGuard,
     // Marketplace fee (2.5%)
     uint256 public constant MARKETPLACE_FEE = 250; // 250 basis points = 2.5%
     uint256 public constant BASIS_POINTS = 10000;
