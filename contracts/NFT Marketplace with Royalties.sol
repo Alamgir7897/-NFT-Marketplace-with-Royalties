@@ -34,13 +34,6 @@ contract Project is ERC721, ERC721URIStorage, Ownable, ReentrancyGuard,
         uint256 percentage; // in basis points (100 = 1%)
     }
     
-    // Listing info for marketplace
-    struct Listing {
-        address seller;
-        uint256 price;
-        bool active;
-    }
-    
     // Mappings
     mapping(uint256 => RoyaltyInfo) private _royalties;
     mapping(address => uint256) private _earnings;
