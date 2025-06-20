@@ -75,13 +75,6 @@ contract Project is ERC721, ERC721URIStorage, Ownable, ReentrancyGuard,
         
         emit NFTMinted(tokenId, to, tokenURI, royaltyPercentage);
         return tokenId;
-    }
-    
-    /**
-     * @dev Core Function 2: List NFT for sale
-     * @param tokenId The ID of the NFT to list
-     * @param price The price to list the NFT for (in wei)
-     */
     function listNFT(uint256 tokenId, uint256 price) public {
         require(ownerOf(tokenId) == msg.sender, "Only owner can list NFT");
         require(price > 0, "Price must be greater than 0");
