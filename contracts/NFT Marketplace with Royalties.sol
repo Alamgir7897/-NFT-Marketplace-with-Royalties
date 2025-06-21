@@ -61,12 +61,6 @@ contract Project is ERC721, ERC721URIStorage, Ownable, ReentrancyGuard,
         require(royaltyPercentage <= 1000, "Royalty cannot exceed 10%"); // Max 10% royalty
         require(bytes(tokenURI).length > 0, "Token URI cannot be empty");
         
-        uint256 tokenId = _tokenIdCounter;
-        _tokenIdCounter++;
-        
-        _safeMint(to, tokenId);
-        _setTokenURI(tokenId, tokenURI);
-        
         // Set royalty info
         _royalties[tokenId] = RoyaltyInfo({
             creator: to,
