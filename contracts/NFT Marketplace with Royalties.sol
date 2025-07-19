@@ -185,6 +185,6 @@ contract NFTMarketplace is ERC721, ERC721URIStorage, Ownable, ReentrancyGuard, I
         override(ERC721, ERC721URIStorage)
         returns (bool)
     {
-        return super.supportsInterface(interfaceId);
+        return super.supportsInterface(interfaceId); 
     }
 }
